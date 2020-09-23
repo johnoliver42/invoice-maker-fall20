@@ -39,5 +39,6 @@ automatically create a shipping label using information already stored or entere
 ## Design
 * [User Stories](DesignDocuments/userStories.md)
 * [Site Map](DesignDocuments/SiteMap.png)
+* [Wireframes](DesignDocuments/Screens.md)
 ### [Project Plan](projectPlan.md)
 ### [Time Log](timeLog.md)
