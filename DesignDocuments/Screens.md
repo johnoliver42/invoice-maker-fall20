@@ -24,7 +24,7 @@
 ![Create Shipping Label](wireframes/createShippingLabel.png)
 
 ### Create/Edit Invoice
-![Create Invoice](wireframes/)
+![Create Invoice](wireframes/createInvoice.png)
 
 ### Manage Account
 ![Manage Account](wireframes/manageAccount.png)
