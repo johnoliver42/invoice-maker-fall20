@@ -8,12 +8,13 @@
 
 ### Week 3
 - [x] Complete Problem Statement
-- [ ] List technologies, versions and how they will be used
-- [ ] Weekly journal entry
-- [ ] Write project plan
-- [ ] Document application flow in text and pictures.
+- [x] List technologies, versions and how they will be used
+- [x] Weekly journal entry
+- [x] Write project plan
+
 
 ### Week 4
+- [ ] Document application flow in text and pictures.
 - [ ] Complete database design
 - [ ] Create the database and user table
 - [ ] Create the user entity class and annotate for hibernate
@@ -34,20 +35,19 @@
 - [ ] Add the role entity
 - [ ] Create the role dao
 - [ ] Create the role dao unit tests
-- [ ] Add a jsp to display user and role
+- [ ] Add a jsp to display user
 - [ ] Add jsp to add a user
+
 
 ### Week 6
 
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
-- [ ] Create trail table
-- [ ] Add the trail entity (test, dev and prod dbs)
 - [ ] Realize that these DAOS are repetitive. Refactor into a generic dao!
-- [ ] Add update and delete functionality in jsp for user and role
-- [ ] Build the trail search jsp
-- [ ] Build the trail add/update/delete jsp
+- [ ] Add update and delete functionality in jsp for user
+- [ ] Add jsp to create an invoice
+- [ ] Add jsp to create a shipping label
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
