@@ -39,4 +39,4 @@ automatically create a shipping label using information already stored or entere
 ## Design
 *  [User Stories](DesignDocuments/userStories.md)
 ### [Project Plan](projectPlan.md)
-### [timeLog](timeLog.md)
+### [Time Log](timeLog.md)
