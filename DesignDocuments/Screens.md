@@ -3,33 +3,31 @@
 ![Home Page](wireframes/homePage.png)
 
 ### Create Account
-![Create Account](wireframes/)
+![Create Account](wireframes/createAccount.png)
 
 ### Log In
 ![Log In](wireframes/login.png)
 
 ### FAQ
-![FAQ](wireframes/)
+![FAQ](wireframes/faq.png)
 
 ### About
 ![About](wireframes/About.png)
 
 ### User Tasks
-![User Tasks](wireframes/)
+![User Tasks](wireframes/userHome.png)
 
 ### View Invoices
-![View Invoices](wireframes/)
+![View Invoices](wireframes/viewInvoices.png)
 
 ### Create Shipping Label
-![Create Shipping Label](wireframes/)
+![Create Shipping Label](wireframes/createShippingLabel.png)
 
 ### Create/Edit Invoice
 ![Create Invoice](wireframes/)
 
 ### Manage Account
-![Manage Account](wireframes/)
+![Manage Account](wireframes/manageAccount.png)
 
-### Admin Panel
-![Admin Panel](wireframes/)
 
 
