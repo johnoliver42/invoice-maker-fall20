@@ -37,6 +37,7 @@ automatically create a shipping label using information already stored or entere
 * IDE: IntelliJ IDEA
 
 ## Design
-*  [User Stories](DesignDocuments/userStories.md)
+* [User Stories](DesignDocuments/userStories.md)
+* [Site Map](DesignDocuments/SiteMap.png)
 ### [Project Plan](projectPlan.md)
 ### [Time Log](timeLog.md)
