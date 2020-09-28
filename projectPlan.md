@@ -25,6 +25,8 @@
 - [ ] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
+- [ ] Create header.jsp
+- [ ] Create footer.jsp
 
 
 ### Week 5

@@ -5,6 +5,6 @@
 |9/22/20|Updated readme with problem statement|1||
 |9/22/20|Added project plan, Added technologies used to README|1||
 |9/22/20|Created wireframes|5.5||
-|||||
+|9/23/20|Work on Week 3 material|2.5||
 |||||
 
