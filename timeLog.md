@@ -8,5 +8,5 @@
 |9/23/20|Work on Week 3 material|2.5||
 |9/28/20|Work on Week 3 material|5||
 |9/29/20|Work on Week 3 material|3||
-|||||
+|9/29/20|Added Hibernate to project, week 4 exercise|5||
 

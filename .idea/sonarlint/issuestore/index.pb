@@ -19,3 +19,11 @@ J
 projectPlan.md,9/1/91f6dd151898858827b754ef8f73ad50c380874c
 I
 src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
+a
+1DesignDocuments/database/Invoice-Maker_create.sql,5/9/59dc18a7f2cddffdd0bdc4cf5b6054939fba92f7
+r
+Bsrc/main/java/com/invoiceMaker/utility/SessionFactoryProvider.java,9/9/999dc38d9a5bf70b598cb989e1bacd883243450a
+_
+/src/main/java/com/invoiceMaker/entity/User.java,7/8/78412ddc2020dfe49d0703ae1b7307230153a915
+g
+7src/main/java/com/invoiceMaker/persistance/UserDao.java,9/c/9c8602031b7410d478a00beb918cfc68d14cb986
