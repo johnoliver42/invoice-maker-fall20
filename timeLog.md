@@ -7,6 +7,6 @@
 |9/22/20|Created wireframes|5.5||
 |9/23/20|Work on Week 3 material|2.5||
 |9/28/20|Work on Week 3 material|5||
-|||||
+|9/29/20|Work on Week 3 material|3||
 |||||
 
