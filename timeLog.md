@@ -9,4 +9,7 @@
 |9/28/20|Work on Week 3 material|5||
 |9/29/20|Work on Week 3 material|3||
 |9/29/20|Added Hibernate to project, week 4 exercise|5||
+|9/30/20|Watched more Week 4 video|1||
+|10/4/20|Week 4 Activity and reading|5||
+
 
