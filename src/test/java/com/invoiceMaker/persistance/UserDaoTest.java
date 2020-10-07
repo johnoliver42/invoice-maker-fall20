@@ -54,12 +54,12 @@ class UserDaoTest {
     void insert() {
 
 
-        User newUser = new User("Fred", "Flintstone", "fflintstone@stoneage.com", "Contruction", "101 Main St.", "", "New York", "NY", "00001");
+        User newUser = new User("Fred", "Flintstone", "fflintstone@stoneage.com", "Construction", "101 Main St.", "", "New York", "NY", "00001");
         int id = userDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = userDao.getById(id);
-
-        assertTrue(newUser.equals(insertedUser));
+        insertedUser.setId(0);
+        assertEquals(newUser.getFistName(), insertedUser.getFistName());
 
 
     }

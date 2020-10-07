@@ -49,3 +49,9 @@ E
 logs/InvoiceMaker.log,2/a/2a5874d7c5d2b3ac45c3e28043908c7b8a06a413
 k
 ;src/test/java/com/invoiceMaker/persistance/UserDaoTest.java,6/4/64cdec200c6995ad89a5e8a9ae9343a8e3f23246
+A
+Invoice Maker.iml,4/e/4ea95db89d080dc493ef49695c31d83d4cb030e2
+Y
+)src/test/resources/Invoice-Maker_drop.sql,2/7/272a54dcd3677374d9b53d01363ce908e27b993a
+T
+$src/main/resources/log4j2.properties,0/5/051489c99c8e54c2d1b772850c431abcc78f2b0d
