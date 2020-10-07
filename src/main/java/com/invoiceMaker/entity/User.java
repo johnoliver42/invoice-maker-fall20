@@ -2,7 +2,7 @@ package com.invoiceMaker.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.ejb.Local;
+
 import javax.persistence.*;
 
 
@@ -10,6 +10,8 @@ import javax.persistence.*;
  *
  * @author John Oliver
  */
+@Entity(name = "User")
+@Table(name = "User")
 public class User {
 
     @Id

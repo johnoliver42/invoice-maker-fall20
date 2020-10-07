@@ -11,5 +11,6 @@
 |9/29/20|Added Hibernate to project, week 4 exercise|5||
 |9/30/20|Watched more Week 4 video|1||
 |10/4/20|Week 4 Activity and reading|5||
-
+|10/5/20|Updated Hibernate, log4j config|.5||
+|10/5/20|Week 4 Exercise|||
 

@@ -27,3 +27,5 @@ _
 /src/main/java/com/invoiceMaker/entity/User.java,7/8/78412ddc2020dfe49d0703ae1b7307230153a915
 g
 7src/main/java/com/invoiceMaker/persistance/UserDao.java,9/c/9c8602031b7410d478a00beb918cfc68d14cb986
+A
+lsp/conf/xml.json,7/f/7f4e25abbdfe64d4a2b91dc402518dd5af5d053c
