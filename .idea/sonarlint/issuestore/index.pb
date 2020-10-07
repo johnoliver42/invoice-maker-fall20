@@ -19,8 +19,6 @@ J
 projectPlan.md,9/1/91f6dd151898858827b754ef8f73ad50c380874c
 I
 src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
-a
-1DesignDocuments/database/Invoice-Maker_create.sql,5/9/59dc18a7f2cddffdd0bdc4cf5b6054939fba92f7
 r
 Bsrc/main/java/com/invoiceMaker/utility/SessionFactoryProvider.java,9/9/999dc38d9a5bf70b598cb989e1bacd883243450a
 _
@@ -29,3 +27,25 @@ g
 7src/main/java/com/invoiceMaker/persistance/UserDao.java,9/c/9c8602031b7410d478a00beb918cfc68d14cb986
 A
 lsp/conf/xml.json,7/f/7f4e25abbdfe64d4a2b91dc402518dd5af5d053c
+b
+2src/main/java/com/invoiceMaker/entity/Invoice.java,e/1/e1bd18cae96de71d168c0785f347e6770bbc29c4
+j
+:src/main/java/com/invoiceMaker/entity/InvoiceLineItem.java,f/2/f2ebc97698afdf007bfe82b5d2520ddf932e83d3
+v
+Fsrc/main/java/com/invoiceMaker/persistance/SessionFactoryProvider.java,4/6/4697b92d0153bcb68f6c158897a92b6825988b1b
+c
+3src/main/java/com/invoiceMaker/entity/Shipment.java,d/2/d22e0ce686418f8116dd2e72d15f756e0bc335b0
+j
+:src/main/java/com/invoiceMaker/entity/ShippingAccount.java,d/f/df27edfec7a40d5c44771b1c0a2b6d933e0e2ee7
+n
+>src/main/java/com/invoiceMaker/entity/UserShippingAccount.java,2/c/2cc38b91b18dab86a79203b26a6c461e4d8d0b84
+`
+0src/main/java/com/invoiceMaker/entity/Order.java,1/8/18a7d504947595a7974f9c23a05c3813075f32e2
+B
+logs/hibernate.log,9/0/90a1b32fd50d04814dffa07f00c7d4ad83616cbd
+P
+ src/test/java/util/Database.java,c/6/c6a39c75e1ac60f733f0e20bad3b82cc0abc3b98
+E
+logs/InvoiceMaker.log,2/a/2a5874d7c5d2b3ac45c3e28043908c7b8a06a413
+k
+;src/test/java/com/invoiceMaker/persistance/UserDaoTest.java,6/4/64cdec200c6995ad89a5e8a9ae9343a8e3f23246

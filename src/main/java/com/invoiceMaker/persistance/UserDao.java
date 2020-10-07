@@ -1,6 +1,7 @@
-package edu.matc.persistence;
+package com.invoiceMaker.persistance;
 
-import edu.matc.entity.User;
+import com.invoiceMaker.entity.User;
+import com.invoiceMaker.persistance.SessionFactoryProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -10,6 +11,10 @@ import org.hibernate.Transaction;
 import javax.persistence.criteria.*;
 import java.util.List;
 
+/** Provides database access for the Users table
+ *
+ * @author John Oliver
+ */
 public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -31,7 +36,9 @@ public class UserDao {
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(user);
+        transaction.commit();
         session.close();
     }
 

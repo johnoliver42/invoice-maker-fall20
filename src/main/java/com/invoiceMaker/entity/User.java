@@ -6,116 +6,231 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 
-/** This class represents a user.
+/**
+ * This class represents a user.
  *
  * @author John Oliver
  */
 @Entity(name = "User")
-@Table(name = "User")
+@Table(name = "Users")
 public class User {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
-    @Column(name = "")
+    @Column(name = "firstName")
     private String fistName;
-    @Column(name = "")
+    @Column(name = "lastName")
     private String lastName;
-    @Column(name = "")
+    @Column(name = "email")
     private String email;
-    @Column(name = "")
+    @Column(name = "businessName")
     private String businessName;
-    @Column(name = "")
-    private String stree1;
-    @Column(name = "")
+    @Column(name = "street1")
+    private String street1;
+    @Column(name = "street2")
     private String street2;
-    @Column(name = "")
+    @Column(name = "city")
     private String city;
-    @Column(name = "")
+    @Column(name = "state")
     private String state;
-    @Column(name = "")
+    @Column(name = "postalCode")
     private String postalCode;
 
+    /**
+     * Instantiates a new User.
+     */
     public User(){}
 
+    public User(String fistName, String lastName, String email, String businessName, String street1, String street2, String city, String state, String postalCode) {
+        this.fistName = fistName;
+        this.lastName = lastName;
+        this.email = email;
+        this.businessName = businessName;
+        this.street1 = street1;
+        this.street2 = street2;
+        this.city = city;
+        this.state = state;
+        this.postalCode = postalCode;
+    }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
-    public void setId(int userId) {
-        this.id = userId;
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
+    /**
+     * Gets fist name.
+     *
+     * @return the fist name
+     */
     public String getFistName() {
         return fistName;
     }
 
+    /**
+     * Sets fist name.
+     *
+     * @param fistName the fist name
+     */
     public void setFistName(String fistName) {
         this.fistName = fistName;
     }
 
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Sets last name.
+     *
+     * @param lastName the last name
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /**
+     * Gets business name.
+     *
+     * @return the business name
+     */
     public String getBusinessName() {
         return businessName;
     }
 
+    /**
+     * Sets business name.
+     *
+     * @param businessName the business name
+     */
     public void setBusinessName(String businessName) {
         this.businessName = businessName;
     }
 
-    public String getStree1() {
-        return stree1;
+    /**
+     * Gets street 1.
+     *
+     * @return the street 1
+     */
+    public String getStreet1() {
+        return street1;
     }
 
-    public void setStree1(String stree1) {
-        this.stree1 = stree1;
+    /**
+     * Sets street 1.
+     *
+     * @param street1 the street 1
+     */
+    public void setStreet1(String street1) {
+        this.street1 = street1;
     }
 
+    /**
+     * Gets street 2.
+     *
+     * @return the street 2
+     */
     public String getStreet2() {
         return street2;
     }
 
+    /**
+     * Sets street 2.
+     *
+     * @param street2 the street 2
+     */
     public void setStreet2(String street2) {
         this.street2 = street2;
     }
 
+    /**
+     * Gets city.
+     *
+     * @return the city
+     */
     public String getCity() {
         return city;
     }
 
+    /**
+     * Sets city.
+     *
+     * @param city the city
+     */
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
     public String getState() {
         return state;
     }
 
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
     public void setState(String state) {
         this.state = state;
     }
 
+    /**
+     * Gets postal code.
+     *
+     * @return the postal code
+     */
     public String getPostalCode() {
         return postalCode;
     }
 
+    /**
+     * Sets postal code.
+     *
+     * @param postalCode the postal code
+     */
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
