@@ -79,7 +79,7 @@ public class Database {
             try {
                 connection.close();
             } catch (SQLException e) {
-                System.out.println("Cannot close connection" + e);
+                logger.error("Cannot close connection" + e);
             }
         }
 
@@ -93,7 +93,7 @@ public class Database {
      */
     public void runSQL(String sqlFile) {
 
-        System.out.println("Run sql file: " + sqlFile);
+
         Statement stmt = null;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream inputStream = classloader.getResourceAsStream(sqlFile);

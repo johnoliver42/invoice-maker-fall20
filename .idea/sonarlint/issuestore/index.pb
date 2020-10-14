@@ -39,8 +39,6 @@ j
 :src/main/java/com/invoiceMaker/entity/ShippingAccount.java,d/f/df27edfec7a40d5c44771b1c0a2b6d933e0e2ee7
 n
 >src/main/java/com/invoiceMaker/entity/UserShippingAccount.java,2/c/2cc38b91b18dab86a79203b26a6c461e4d8d0b84
-`
-0src/main/java/com/invoiceMaker/entity/Order.java,1/8/18a7d504947595a7974f9c23a05c3813075f32e2
 B
 logs/hibernate.log,9/0/90a1b32fd50d04814dffa07f00c7d4ad83616cbd
 P
@@ -51,7 +49,13 @@ k
 ;src/test/java/com/invoiceMaker/persistance/UserDaoTest.java,6/4/64cdec200c6995ad89a5e8a9ae9343a8e3f23246
 A
 Invoice Maker.iml,4/e/4ea95db89d080dc493ef49695c31d83d4cb030e2
+a
+1src/main/java/com/invoiceMaker/entity/Orders.java,a/4/a4aa1e3268824d8dfae9deff86c552e0cb757ef8
+T
+$src/test/resources/hibernate.cfg.xml,a/a/aa7145a56c8c11450250c13faeb20285bee5c486
 Y
 )src/test/resources/Invoice-Maker_drop.sql,2/7/272a54dcd3677374d9b53d01363ce908e27b993a
 T
 $src/main/resources/log4j2.properties,0/5/051489c99c8e54c2d1b772850c431abcc78f2b0d
+i
+9src/main/java/com/invoiceMaker/persistance/OrdersDao.java,7/2/724cfb07ed69806ed06d650f8e48819b77ced85b
