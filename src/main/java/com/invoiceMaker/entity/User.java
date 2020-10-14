@@ -4,6 +4,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -16,7 +18,7 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
     @Column(name = "firstName")
@@ -38,11 +40,28 @@ public class User {
     @Column(name = "postalCode")
     private String postalCode;
 
+    @OneToMany(  cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "users_id")
+    private Set<Orders> orders = new HashSet<>();
+
     /**
      * Instantiates a new User.
      */
     public User(){}
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param fistName     the fist name
+     * @param lastName     the last name
+     * @param email        the email
+     * @param businessName the business name
+     * @param street1      the street 1
+     * @param street2      the street 2
+     * @param city         the city
+     * @param state        the state
+     * @param postalCode   the postal code
+     */
     public User(String fistName, String lastName, String email, String businessName, String street1, String street2, String city, String state, String postalCode) {
         this.fistName = fistName;
         this.lastName = lastName;
@@ -233,5 +252,44 @@ public class User {
      */
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    /**
+     * Gets orders.
+     *
+     * @return the orders
+     */
+    public Set<Orders> getOrders() {
+        return orders;
+    }
+
+    /**
+     * Sets orders.
+     *
+     * @param orders the orders
+     */
+    public void setOrders(Set<Orders> orders) {
+        this.orders = orders;
+    }
+
+    /** Add an order to a user
+     *
+     * @param order
+     */
+    public void addOrder(Orders order) {
+
+        this.orders.add(order);
+        order.setUser(this);
+    }
+
+    /**
+     * Remove order.
+     *
+     * @param order the order
+     */
+    public void removeOrder(Orders order) {
+
+        this.orders.remove(order);
+        order.setUser(null);
     }
 }

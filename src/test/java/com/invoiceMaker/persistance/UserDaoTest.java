@@ -1,5 +1,9 @@
 package com.invoiceMaker.persistance;
 
+import com.invoiceMaker.entity.Invoice;
+import com.invoiceMaker.entity.Orders;
+import com.invoiceMaker.entity.Orders;
+import com.invoiceMaker.entity.Shipment;
 import com.invoiceMaker.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -88,5 +92,35 @@ class UserDaoTest {
     void getByPropertyLike() {
         List<User> users = userDao.getByPropertyLike("lastName", "j");
         assertEquals(4, users.size());
+    }
+
+    @Test
+    void insertWithOrder() {
+
+
+        User newUser = new User("Fred", "Flintstone", "fflintstone@stoneage.com"
+                , "Construction", "101 Main St.", "", "New York", "NY"
+                , "00001");
+
+        Shipment testShipment = new Shipment();
+        testShipment.setShipmentId(3);
+
+        Invoice testInvoice = new Invoice();
+        testInvoice.setInvoiceId(3);
+
+        Orders testOrder = new Orders(null, null, newUser);
+        newUser.addOrder(testOrder);
+
+
+
+        int id = userDao.insert(newUser);
+        User insertedUser = userDao.getById(id);
+        assertEquals(1, insertedUser.getOrders().size());
+        assertNotEquals(0,id);
+
+        insertedUser.setId(0);
+        assertEquals(newUser.getFistName(), insertedUser.getFistName());
+
+
     }
 }
