@@ -12,5 +12,9 @@
 |9/30/20|Watched more Week 4 video|1||
 |10/4/20|Week 4 Activity and reading|5||
 |10/5/20|Updated Hibernate, log4j config|.5||
-|10/5/20|Week 4 Exercise|||
+|10/8/20|Week 5 Exercise|1||
+|10/11/20|Week 5 Exercise + database|6||
+|10/13/20|Week 5 Exercise|8||
+|10/14/20|Week 5 Exercise|1||
+
 
