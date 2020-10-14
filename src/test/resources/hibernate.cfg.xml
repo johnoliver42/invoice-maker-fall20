@@ -21,6 +21,14 @@
         <property name="use_sql_comments">true</property>
 
         <mapping class="com.invoiceMaker.entity.User"/>
+        <mapping class="com.invoiceMaker.entity.Invoice"/>
+        <mapping class="com.invoiceMaker.entity.InvoiceLineItem"/>
+        <mapping class="com.invoiceMaker.entity.Orders"/>
+        <mapping class="com.invoiceMaker.entity.Shipment"/>
+        <mapping class="com.invoiceMaker.entity.ShippingAccount"/>
+        <mapping class="com.invoiceMaker.entity.UserShippingAccount"/>
+
+
 
     </session-factory>
 
