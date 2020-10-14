@@ -13,7 +13,7 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-/** Provides database access for the Orderss table
+/** Provides database access for the Orders table
  *
  * @author John Oliver
  */
