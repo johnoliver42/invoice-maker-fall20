@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2020-10-07 05:53:26.731
+-- Last modification date: 2020-10-14 08:48:53.043
 
 -- foreign keys
 ALTER TABLE Invoice_Line_Item
@@ -8,7 +8,7 @@ ALTER TABLE Invoice_Line_Item
 ALTER TABLE Invoice
     DROP FOREIGN KEY Order_Invoice;
 
-ALTER TABLE `Order`
+ALTER TABLE Orders
     DROP FOREIGN KEY Order_users;
 
 ALTER TABLE Shipment
@@ -31,7 +31,7 @@ DROP TABLE Invoice;
 
 DROP TABLE Invoice_Line_Item;
 
-DROP TABLE `Order`;
+DROP TABLE Orders;
 
 DROP TABLE Shipment;
 

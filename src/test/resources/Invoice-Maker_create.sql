@@ -1,26 +1,26 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2020-10-07 05:53:26.731
+-- Last modification date: 2020-10-14 10:16:09.429
 
 -- tables
 -- Table: Invoice
 CREATE TABLE Invoice (
     id int NOT NULL AUTO_INCREMENT,
-    invoiceId int NULL,
-    shipmentId int NOT NULL,
-    createDate timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-    lastUpdated timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    businessName varchar(100) NOT NULL,
-    businessPhone varchar(15) NOT NULL,
-    businessStreet1 varchar(50) NOT NULL,
-    businessStreet2 varchar(50) NOT NULL,
-    businessCity varchar(50) NOT NULL,
-    businessState varchar(50) NOT NULL,
-    businessZip varchar(50) NOT NULL,
-    businessEmail varchar(50) NOT NULL,
-    notes varchar(300) NOT NULL,
-    subTotal decimal(10,2) NOT NULL DEFAULT 0.00,
-    total decimal(10,2) NOT NULL DEFAULT 0.00,
-    tax decimal(7,5) NOT NULL DEFAULT 0.00,
+    invoiceId int NOT NULL,
+    shipmentId int NULL,
+    createDate timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    lastUpdated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    businessName varchar(100) NULL,
+    businessPhone varchar(15) NULL,
+    businessStreet1 varchar(50) NULL,
+    businessStreet2 varchar(50) NULL,
+    businessCity varchar(50) NULL,
+    businessState varchar(50) NULL,
+    businessZip varchar(50) NULL,
+    businessEmail varchar(50) NULL,
+    notes varchar(300) NULL,
+    subTotal decimal(10,2) NULL DEFAULT 0.00,
+    total decimal(10,2) NULL DEFAULT 0.00,
+    tax decimal(7,5) NULL DEFAULT 0.00,
     CONSTRAINT Invoice_pk PRIMARY KEY (id)
 );
 
@@ -35,40 +35,40 @@ CREATE TABLE Invoice_Line_Item (
     CONSTRAINT Invoice_Line_Item_pk PRIMARY KEY (id)
 );
 
--- Table: Order
-CREATE TABLE `Order` (
+-- Table: Orders
+CREATE TABLE Orders (
     orderId int NOT NULL AUTO_INCREMENT,
-    Invoice_id int NOT NULL,
-    Shipment_id int NOT NULL,
+    Invoice_id int NULL,
+    Shipment_id int NULL,
     users_id int NOT NULL,
-    CONSTRAINT Order_pk PRIMARY KEY (orderId)
+    CONSTRAINT Orders_pk PRIMARY KEY (orderId)
 );
 
 -- Table: Shipment
 CREATE TABLE Shipment (
     id int NOT NULL AUTO_INCREMENT,
-    shipmentId int NULL,
-    easyPostShipmentId varchar(200) NOT NULL,
-    easyPostTrackerId varchar(200) NOT NULL,
-    Order_orderId int NOT NULL,
-    createDate timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-    lastUpdated timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    fromName varchar(50) NOT NULL,
-    fromEmail varchar(50) NOT NULL,
-    fromPhone varchar(50) NOT NULL,
-    fromStreet1 varchar(50) NOT NULL,
-    fromStreet2 varchar(50) NOT NULL,
-    fromCity varchar(50) NOT NULL,
-    fromState varchar(50) NOT NULL,
-    fromZip varchar(50) NOT NULL,
-    toName int NOT NULL,
-    toBusiness int NOT NULL,
-    toStreet1 int NOT NULL,
-    toStreet2 int NOT NULL,
-    toCity int NOT NULL,
-    toState int NOT NULL,
-    toZip int NOT NULL,
-    weight int NOT NULL,
+    shipmentId int NOT NULL,
+    easyPostShipmentId varchar(200) NULL,
+    easyPostTrackerId varchar(200) NULL,
+    createDate timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    lastUpdated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    fromName varchar(50) NULL,
+    fromEmail varchar(50) NULL,
+    fromPhone varchar(50) NULL,
+    fromStreet1 varchar(50) NULL,
+    fromStreet2 varchar(50) NULL,
+    fromCity varchar(50) NULL,
+    fromState varchar(50) NULL,
+    fromZip varchar(50) NULL,
+    toName int NULL,
+    toBusiness int NULL,
+    toStreet1 int NULL,
+    toStreet2 int NULL,
+    toCity int NULL,
+    toState int NULL,
+    toZip int NULL,
+    weight int NULL,
+    labelDate date NULL,
     CONSTRAINT Shipment_pk PRIMARY KEY (id)
 );
 
@@ -107,15 +107,17 @@ CREATE TABLE User_Shipping_Account (
 -- Table: Users
 CREATE TABLE Users (
     id int NOT NULL AUTO_INCREMENT,
-    firstName varchar(50) NULL,
-    lastName varchar(50) NULL,
-    email varchar(100) NULL,
-    street1 varchar(100) NOT NULL,
-    street2 varchar(100) NOT NULL,
-    city varchar(100) NOT NULL,
-    state varchar(50) NOT NULL,
-    postalCode varchar(50) NOT NULL,
-    businessName varchar(100) NOT NULL,
+    firstName varchar(50) NOT NULL,
+    lastName varchar(50) NOT NULL,
+    email varchar(100) NOT NULL,
+    street1 varchar(100) NULL,
+    street2 varchar(100) NULL,
+    city varchar(100) NULL,
+    state varchar(50) NULL,
+    postalCode varchar(50) NULL,
+    businessName varchar(100) NULL,
+    createDate timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    lastUpdated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT Users_pk PRIMARY KEY (id)
 );
 
@@ -127,17 +129,17 @@ ALTER TABLE Invoice_Line_Item ADD CONSTRAINT Invoice_Line_Item_Invoice FOREIGN K
 
 -- Reference: Order_Invoice (table: Invoice)
 ALTER TABLE Invoice ADD CONSTRAINT Order_Invoice FOREIGN KEY Order_Invoice (id)
-    REFERENCES `Order` (orderId)
+    REFERENCES Orders (orderId)
     ON DELETE CASCADE;
 
--- Reference: Order_users (table: Order)
-ALTER TABLE `Order` ADD CONSTRAINT Order_users FOREIGN KEY Order_users (users_id)
+-- Reference: Order_users (table: Orders)
+ALTER TABLE Orders ADD CONSTRAINT Order_users FOREIGN KEY Order_users (users_id)
     REFERENCES Users (id)
     ON DELETE CASCADE;
 
 -- Reference: Shipment_Order (table: Shipment)
-ALTER TABLE Shipment ADD CONSTRAINT Shipment_Order FOREIGN KEY Shipment_Order (Order_orderId)
-    REFERENCES `Order` (orderId)
+ALTER TABLE Shipment ADD CONSTRAINT Shipment_Order FOREIGN KEY Shipment_Order (id)
+    REFERENCES Orders (orderId)
     ON DELETE CASCADE;
 
 -- Reference: Shipment_Shipment_Tracking (table: Shipment_Tracking)
