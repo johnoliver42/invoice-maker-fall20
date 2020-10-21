@@ -37,8 +37,6 @@ c
 3src/main/java/com/invoiceMaker/entity/Shipment.java,d/2/d22e0ce686418f8116dd2e72d15f756e0bc335b0
 j
 :src/main/java/com/invoiceMaker/entity/ShippingAccount.java,d/f/df27edfec7a40d5c44771b1c0a2b6d933e0e2ee7
-n
->src/main/java/com/invoiceMaker/entity/UserShippingAccount.java,2/c/2cc38b91b18dab86a79203b26a6c461e4d8d0b84
 B
 logs/hibernate.log,9/0/90a1b32fd50d04814dffa07f00c7d4ad83616cbd
 P
@@ -59,3 +57,17 @@ T
 $src/main/resources/log4j2.properties,0/5/051489c99c8e54c2d1b772850c431abcc78f2b0d
 i
 9src/main/java/com/invoiceMaker/persistance/OrdersDao.java,7/2/724cfb07ed69806ed06d650f8e48819b77ced85b
+b
+2DesignDocuments/database/Invoice-Maker-diagram.svg,f/7/f7d16c9c7d5f4dd350e3cf3f5eae5268d528aa8a
+m
+=src/test/java/com/invoiceMaker/persistance/OrdersDaoTest.java,5/0/50853470a81f905aae4235fa4443dadd6ed8430d
+k
+;src/main/java/com/invoiceMaker/action/CreateUserAction.java,b/8/b81185b40a57574d4da5590b544054d1067993d3
+i
+9src/main/java/com/invoiceMaker/action/EditUserAction.java,5/4/54d73f0e8f1cf173dab7748e117267cafc8593e3
+g
+7src/main/java/com/invoiceMaker/entity/UserPassword.java,9/8/9856894eebe43376bff4d2484cbd12187c41fa74
+k
+;src/main/java/com/invoiceMaker/entity/ShipmentTracking.java,f/c/fcac8e2f3e3566532d5a0e8a8f299988271175e4
+j
+:src/main/java/com/invoiceMaker/entity/ShippingCarrier.java,5/3/53e8500fb548d5fcc3a20ed32ba31611cefc7e44

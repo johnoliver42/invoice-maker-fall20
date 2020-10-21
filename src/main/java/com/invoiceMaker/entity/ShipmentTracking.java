@@ -7,7 +7,7 @@ import javax.persistence.Table;
  *
  * @author John Oliver
  */
-@Entity(name = "ShippingAccount")
-@Table(name = "Shipping_Account")
-public class ShippingAccount {
+@Entity(name = "ShipmentTracking")
+@Table(name = "Shipment_Tracking")
+public class ShipmentTracking {
 }

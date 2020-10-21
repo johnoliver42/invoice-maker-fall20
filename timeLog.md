@@ -16,5 +16,7 @@
 |10/11/20|Week 5 Exercise + database|6||
 |10/13/20|Week 5 Exercise|8||
 |10/14/20|Week 5 Exercise|1||
+|10/18/20|Project Database|3||
+|10/21/20|Week 6 Exercise|8||
 
 

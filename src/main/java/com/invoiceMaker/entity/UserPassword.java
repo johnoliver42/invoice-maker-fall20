@@ -7,7 +7,7 @@ import javax.persistence.Table;
  *
  * @author John Oliver
  */
-@Entity(name = "ShippingAccount")
-@Table(name = "Shipping_Account")
-public class ShippingAccount {
+@Entity(name = "UserPassword")
+@Table(name = "User_Password")
+public class UserPassword {
 }
